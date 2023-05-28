@@ -16,17 +16,14 @@
 
 -- Automatically reload the plugin after saving the file
 -- vim.cmd([[autocmd BufWritePost turbosalva.lua lua require("user/plugins/turbosalva").reload()]])
-print("hello.lua")
-print("hello.lua")
-print("hello.lua")
-print("hello.lua")
+print("plugin folder hello.lua")
 
 -- -- local setup = require("lua/setup")
 -- local api = vim.api
 -- local fn = vim.fn
 
 local function hello()
-  print("hello world")
+	print("hello world")
 end
 
 -- local function insert_wrapped_word()
