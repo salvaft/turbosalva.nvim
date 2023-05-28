@@ -46,9 +46,8 @@ end
 -- 	api.nvim_feedkeys(api.nvim_replace_termcodes("<Esc>", true, false, true), "n", true)
 -- end
 -- vim.cmd("command! TurboSalva lua require('turbosalva').insert_wrapped_word()")
-
-return {
-  -- 	insert_wrapped_word = insert_wrapped_word,
-  -- 	-- setup = setup,
-  hello = hello,
-}
+return hello
+-- return {
+-- 	insert_wrapped_word = insert_wrapped_word,
+-- 	-- setup = setup,
+-- }
