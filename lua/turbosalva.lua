@@ -1,6 +1,11 @@
 local api = vim.api
 local fn = vim.fn
 local function insert_wrapped_word()
+	-- Check if the buffer is modifiable
+	if not api.nvim_buf_get_option(0, "modifiable") then
+		print("Buffer is not modifiable")
+		return
+	end
 	-- Get the word under the cursor
 	local word = fn.expand("<cword>")
 
