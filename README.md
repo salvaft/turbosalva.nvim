@@ -1,7 +1,7 @@
 # turbosalva.nvim
 
-## Simple plugin file to add easy and quick console.logs. Inspired by `turboconsolelog` for vscode.
+Simple plugin file to add easy and quick debug print statements. Inspired by `turboconsolelog` for vscode.
 
 ## TODOs
-- [ ] Execute only when the buffer is modifiable
-- [ ] Add filetype patterns for Rust, Go and Python
+- [x] Execute only when the buffer is modifiable
+- [x] Add filetype patterns for Rust, Go and Python
