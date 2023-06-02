@@ -5,7 +5,7 @@ local function setup()
 	local group = vim.api.nvim_create_augroup("reload_turbosalva", { clear = true })
 	vim.api.nvim_create_autocmd(
 		"BufWritePost",
-		{ pattern = "turbosalva.lua", callback = require("reload").reload_plugin, group = group }
+		{ pattern = "turbosalva.lua", callback = require("turbosalva.reload").reload_plugin, group = group }
 	)
 	-- vim.cmd([[autocmd BufWritePost turbosalva.lua lua require("reload").reload_plugin()]])
 	vim.cmd("command! TurboSalva lua require('turbosalva').insert_wrapped_word()")

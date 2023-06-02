@@ -1,1 +1,1 @@
-require("setup").setup()
+require("turbosalva.setup").setup()
